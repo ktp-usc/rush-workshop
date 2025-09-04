@@ -1,7 +1,12 @@
 import { projects } from "../data/projects.ts";
 import ProjectCard from "../components/ProjectCard.tsx";
+import { useEffect } from "react";
 
 const Home = () => {
+    useEffect(() => {
+        document.title = 'Home | My Portfolio'
+    }, [])
+
     return (
         <div className="min-h-dvh bg-white text-gray-900">
             <main className="mx-auto max-w-5xl p-4">
